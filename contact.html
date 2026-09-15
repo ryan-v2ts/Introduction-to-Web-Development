@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Twin Cities Animal Rescue | Contact Us</title>
+    </head>
+    <body>
+        <header>
+            <!-- Main Logo-->
+            <img src="images/rescue-logo_c.png"
+                alt="Twin Cities Animal Rescue Logo"
+                width="319"
+                height="294" />
+            <br />
+            <a href="#main-content">Skip to main content</a>
+            <!-- Navigation section -->
+            <nav aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main-content">
+            <h1>Twin Cities Animal Rescue</h1>
+            <h2>Use this form to send us an inquiry.</h2>
+            <figure>
+                <img src="images/rescue-pet_c.png" alt="A closeup picture of a brown guinea pig" height="400">
+                <figcaption>Your next pet is just a click away</figcaption>
+            </figure>
+            <form action="#">
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label for="full_name">Full Name:</label>
+                    <input type="text" id="full_name" name="full_name" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <legend>How Can You Help?</legend>
+                    <p>Interest Type</p>
+                    <label>
+                        <input type="radio" name="interest" value="adopt" required> Adopt a Pet
+                    </label>
+                    <label>
+                        <input type="radio" name="interest" value="foster"> Foster a Pet
+                    </label>
+                    <label>
+                        <input type="radio" name="interest" value="volunteer"> Volunteer
+                    </label>
+                    <br>
+                    <label for="availability">When are you available?</label>
+                    <br>
+                    <input type="date" id="availability" name="availability" required>
+                    <br>
+                    <label for="experience">Your Pet Experience</label>
+                        <select id="experience" name="experience">
+                        <option value="none">No Experience</option>
+                        <option value="two">1-2 Years</option>
+                        <option value="more">2+ Years</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Tell Us About Yourself</legend>
+                    <textarea id="about" name="about" rows="4" cols="50" placeholder="Tell us about you in 3-5 sentences" required></textarea>
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
+            <h3>Our Service Area</h3>
+            <p>We serve pets and families throughout the Twin Cities and surrounding communities.</p>
+            <h3>Office Hours</h3>
+            <p>Monday through Friday: 9:00 AM to 5:00 PM<br>Saturday: 10:00 AM to 2:00 PM<br>Sunday: Closed</p>
+        </main>
+        <footer>
+            <nav aria-label="Footer">
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+
+</html>
