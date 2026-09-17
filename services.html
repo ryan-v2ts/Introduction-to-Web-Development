@@ -4,18 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Twin Cities Animal Rescue | Services</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <!-- Main Logo-->
-            <img src="images/rescue-logo_c.png"
-                alt="Twin Cities Animal Rescue Logo"
-                width="319"
-                height="294" />
-            <br />
-            <a href="#main-content">Skip to main content</a>
+            <div id="logo">
+                <img src="images/rescue-logo_a.png" alt="Twin Cities Animal Rescue Logo" width="319" height="294">
+            </div>
+            <div id="content-skip">
+                <a href="#main-content">Skip to main content</a>
+            </div>
             <!-- Navigation section -->
-            <nav aria-label="Primary">
+            <nav aria-label="Primary" id="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html" aria-current="page">Services</a></li>
@@ -26,26 +30,34 @@
         </header>
         <main id="main-content">
             <h1>Twin Cities Animal Rescue</h1>
-            <h2>We offer adoption services, a foster program, and volunteer services.</h2>
+            <h2 class="tagline">Find the right way to help an animal in need.</h2>
             <figure>
-                <img src="images/rescue-volunteer_c.png" alt="A man in a volunteer t-shirt is petting a large dog" height="400">
-                <figcaption>Volunteering is easy and rewarding. Help us find homes for animals in need.</figcaption>
+                <img src="images/rescue-volunteer_c.png" alt="A man in a volunteer t-shirt is petting a large dog">
+                <figcaption>Every helping hand matters. Adopt, foster, or volunteer to give animals the care and fresh start they deserve.</figcaption>
             </figure>
-            <!-- Adoption Process Overview -->
-            <h3>Our Adoption Process</h3>
-            <ol>
-                <li>View available pets.</li>
-                <li>Submit an adoption application.</li>
-                <li>Meet your selected pet.</li>
-                <li>Complete the adoption forms and pay the adoption fee.</li>
-                <li>Welcome your new pet home.</li>
-            </ol>
-            <!-- Foster Program Overview -->
-            <h3>Our Foster Program</h3>
-            <p>Foster families give pets a safe place to stay before adoption. We provide guidance, supplies, and support throughout the foster period.</p>
-            <!-- Volunteer Role Descriptions -->
-            <h3>Volunteer</h3>
-            <p>Help with adoption events, animal care, transportation, fundraising, and community outreach. Choose a role based on your interests and availability.</p>
+            <div class="content-columns">
+                <!-- Adoption Process Overview -->
+                <div class="content-card-primary">
+                    <p class="title">Adopt a Pet</p>
+                    <ol>
+                        <li>Browse pets who are looking for homes.</li>
+                        <li>Submit an adoption application.</li>
+                        <li>Meet the pet who may be your perfect match.</li>
+                        <li>Complete the adoption forms and fee.</li>
+                        <li>Welcome your new companion home.</li>
+                    </ol>
+                </div>
+                <!-- Foster Program Overview -->
+                <div class="content-card-primary">
+                    <p class="title">Foster a Pet</p>
+                    <p>Foster families give pets a safe, caring place to stay before adoption. We provide guidance, supplies, and support throughout the foster period.</p>
+                </div>
+                <!-- Volunteer Role Descriptions -->
+                <div class="content-card-primary">
+                    <p class="title">Volunteer Your Time</p>
+                    <p>Help with adoption events, animal care, transportation, fundraising, or community outreach. Choose a role that fits your interests and availability.</p>
+                </div>
+            </div>
         </main>
         <footer>
             <nav aria-label="Footer">
