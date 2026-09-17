@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Twin Cities Animal Rescue | Contact Us</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!-- Main Logo-->
+            <div id="logo">
+                <img src="images/rescue-logo_a.png" alt="Twin Cities Animal Rescue Logo" width="319" height="294">
+            </div>
+            <div id="content-skip">
+                <a href="#main-content">Skip to main content</a>
+            </div>
+            <!-- Navigation section -->
+            <nav aria-label="Primary" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main-content">
+            <h1>Twin Cities Animal Rescue</h1>
+            <h2 class="tagline">Ready to help an animal find a loving home?</h2>
+            <figure class="contact-photo">
+                <img src="images/rescue-pet_c.png" alt="A closeup picture of a brown guinea pig">
+                <figcaption>Tell us how you would like to help, and our team will be happy to connect with you.</figcaption>
+            </figure>
+            <form action="#" class="contact-form">
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label for="full_name">Full Name:</label>
+                    <input type="text" id="full_name" name="full_name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+                <fieldset>
+                    <legend>How You Can Help</legend>
+                    <p>What are you interested in?</p>
+                    <label>
+                        <input type="radio" name="interest" value="adopt" required> Adopt a Pet
+                    </label>
+                    <label>
+                        <input type="radio" name="interest" value="foster"> Foster a Pet
+                    </label>
+                    <label>
+                        <input type="radio" name="interest" value="volunteer"> Volunteer
+                    </label>
+                    <label for="availability">When are you available to help?</label>
+                    <input type="date" id="availability" name="availability" required>
+                    <label for="experience">Your experience with pets</label>
+                    <select id="experience" name="experience">
+                        <option value="none">No Experience</option>
+                        <option value="two">1-2 Years</option>
+                        <option value="more">2+ Years</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Tell Us About Yourself</legend>
+                    <textarea id="about" name="about" rows="4" cols="50" placeholder="Tell us about yourself in 3-5 sentences" required></textarea>
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
+            <h3>Where We Serve</h3>
+            <p>We support pets and families throughout the Twin Cities and surrounding communities.</p>
+            <h3>When We Are Available</h3>
+            <p>Monday through Friday: 9:00 AM to 5:00 PM<br>Saturday: 10:00 AM to 2:00 PM<br>Sunday: Closed</p>
+        </main>
+        <footer>
+            <nav aria-label="Footer">
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+
+</html>
