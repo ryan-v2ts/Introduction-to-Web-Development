@@ -35,17 +35,20 @@
                 <img src="images/rescue-pet_c.png" alt="A closeup picture of a brown guinea pig">
                 <figcaption>Tell us how you would like to help, and our team will be happy to connect with you.</figcaption>
             </figure>
-            <form action="#" class="contact-form">
+            <form action="#" class="contact-form" id="contact-form" novalidate>
                 <fieldset>
                     <legend>Your Information</legend>
                     <label for="full_name">Full Name:</label>
-                    <input type="text" id="full_name" name="full_name" required>
+                    <input type="text" id="full_name" name="full_name" aria-describedby="full-name-error" required>
+                    <span class="field-error" id="full-name-error" role="alert"></span>
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" aria-describedby="email-error" required>
+                    <span class="field-error" id="email-error" role="alert"></span>
                 </fieldset>
                 <fieldset>
                     <legend>How You Can Help</legend>
                     <p>What are you interested in?</p>
+                    <span class="field-error" id="interest-error" role="alert"></span>
                     <label>
                         <input type="radio" name="interest" value="adopt" required> Adopt a Pet
                     </label>
@@ -56,7 +59,8 @@
                         <input type="radio" name="interest" value="volunteer"> Volunteer
                     </label>
                     <label for="availability">When are you available to help?</label>
-                    <input type="date" id="availability" name="availability" required>
+                    <input type="date" id="availability" name="availability" aria-describedby="availability-error" required>
+                    <span class="field-error" id="availability-error" role="alert"></span>
                     <label for="experience">Your experience with pets</label>
                     <select id="experience" name="experience">
                         <option value="none">No Experience</option>
@@ -66,9 +70,11 @@
                 </fieldset>
                 <fieldset>
                     <legend>Tell Us About Yourself</legend>
-                    <textarea id="about" name="about" rows="4" cols="50" placeholder="Tell us about yourself in 3-5 sentences" required></textarea>
+                    <textarea id="about" name="about" rows="4" cols="50" placeholder="Tell us about yourself in 3-5 sentences" aria-describedby="about-error" required></textarea>
+                    <span class="field-error" id="about-error" role="alert"></span>
                 </fieldset>
                 <button type="submit">Submit</button>
+                <p class="form-status" id="form-status" role="status"></p>
             </form>
             <h3>Where We Serve</h3>
             <p>We support pets and families throughout the Twin Cities and surrounding communities.</p>
@@ -83,6 +89,7 @@
                 </ul>
             </nav>
         </footer>
+        <script src="js/script.js"></script>
     </body>
 
 </html>
