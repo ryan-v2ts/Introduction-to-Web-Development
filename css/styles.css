@@ -215,6 +215,82 @@ textarea {
 .content-card-primary button :focus-visible {
     background-color: var(--vibrant-coral);
 }
+.content-card-primary .card-link {
+    display: inline-block;
+    background-color: var(--pine-blue);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+.content-card-primary .card-link:hover,
+.content-card-primary .card-link:focus-visible {
+    background-color: var(--vibrant-coral);
+}
+.service-matcher {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border: 2px solid var(--pine-blue);
+    border-radius: 8px;
+}
+.service-matcher h2 {
+    margin-top: 0;
+}
+.matcher-form {
+    text-align: left;
+}
+.matcher-form fieldset {
+    border: 1px solid rgba(55, 119, 113, 0.4);
+    border-radius: 4px;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+.matcher-form legend {
+    color: var(--pine-blue);
+    font-weight: 700;
+    padding: 0 0.35rem;
+}
+.matcher-form label {
+    display: block;
+    margin: 0.65rem 0;
+}
+.matcher-form input {
+    margin-right: 0.5rem;
+}
+.matcher-form button,
+.recommendation-result a {
+    background-color: var(--pine-blue);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.6rem 1rem;
+    font: inherit;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+.matcher-form button:hover,
+.matcher-form button:focus-visible,
+.recommendation-result a:hover,
+.recommendation-result a:focus-visible {
+    background-color: var(--vibrant-coral);
+}
+.recommendation-result {
+    padding: 1rem;
+    background-color: #f8ddd5;
+    border-radius: 4px;
+}
+.recommendation-result h3 {
+    color: var(--pine-blue);
+    margin-top: 0;
+}
+.recommendation-result a {
+    display: inline-block;
+}
 .content-card-primary ul {
     list-style-type: disc;
     padding-left: 1rem;
@@ -287,6 +363,24 @@ textarea {
 .contact-form input[type="radio"] {
     width: auto;
     margin: 0;
+}
+.field-error {
+    display: block;
+    min-height: 1.25rem;
+    color: #7a160d;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: -0.75rem 0 0.75rem;
+}
+.contact-form [aria-invalid="true"] {
+    outline: 2px solid #7a160d;
+    outline-offset: 1px;
+}
+.form-status {
+    min-height: 1.5rem;
+    color: var(--pine-blue);
+    font-weight: 700;
+    margin: 1rem 0 0;
 }
 .contact-form button {
     background-color: var(--pine-blue);

@@ -35,6 +35,36 @@
                 <img src="images/rescue-volunteer_c.png" alt="A man in a volunteer t-shirt is petting a large dog">
                 <figcaption>Every helping hand matters. Adopt, foster, or volunteer to give animals the care and fresh start they deserve.</figcaption>
             </figure>
+            <section class="service-matcher" aria-labelledby="matcher-title">
+                <h2 id="matcher-title">Find Your Best Way to Help</h2>
+                <p>Answer three questions to find an opportunity that fits your time, home, and interests.</p>
+                <form id="service-matcher-form" class="matcher-form">
+                    <fieldset>
+                        <legend>How much time can you give?</legend>
+                        <label><input type="radio" name="time" value="adopt" required> I am ready for a long-term commitment</label>
+                        <label><input type="radio" name="time" value="foster"> I can help for a limited period</label>
+                        <label><input type="radio" name="time" value="volunteer"> I have a few hours to share</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Can you care for an animal in your home?</legend>
+                        <label><input type="radio" name="home" value="home"> Yes, I can welcome an animal home</label>
+                        <label><input type="radio" name="home" value="no-home"> No, I prefer to help outside my home</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What kind of involvement interests you?</legend>
+                        <label><input type="radio" name="involvement" value="adopt"> Becoming a pet's permanent family</label>
+                        <label><input type="radio" name="involvement" value="foster"> Helping a pet temporarily</label>
+                        <label><input type="radio" name="involvement" value="volunteer"> Supporting rescue programs and events</label>
+                    </fieldset>
+                    <button type="submit">Show My Recommendation</button>
+                </form>
+                <div id="recommendation-result" class="recommendation-result" hidden>
+                    <br>
+                    <h3></h3>
+                    <p></p>
+                    <a href="contact.html">Contact our team</a>
+                </div>
+            </section>
             <div class="content-columns">
                 <!-- Adoption Process Overview -->
                 <div class="content-card-primary">
@@ -67,6 +97,7 @@
                 </ul>
             </nav>
         </footer>
+        <script src="js/script.js"></script>
     </body>
 
 </html>
